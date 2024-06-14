@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poetsen One", sans-serif;
+
+}
+
+body {
+    text-align: center;
+    background-image: linear-gradient(to right, #008ba3, #5C2FC2);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+.vidios {
+    height: 100vh;
+    width: 50%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+gap: 20px;
+    iframe {
+        width: 450px;
+        height: 250px;
+    }
+}
+.container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    border-right: 2px solid #ffffff;
+    iframe {
+        width: 450px;
+        height: 250px;
+    }
+}
+
+.cards {
+    width: 220px;
+    height: 250px;
+    background-color: #cccccc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    border-radius: 7px;
+    transition: all 0.3s;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.cards img {
+    height: 200px;
+    width: 90%;
+    border-radius: 7px;
+    padding: 20px;
+
+}
+
+.cards:hover {
+    transform: scale(1.04);
+    box-shadow: 1px 3px 3px 3px #383838;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+ #back{
+  
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    background-color: #383838;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-transform: uppercase;
+ }
+ #top{
+  
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    background-color: #383838;
+    width: 190px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-transform: uppercase;
+ }
+ #html{
+   
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    background-color: #383838;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-transform: uppercase;
+ }
+ #css{
+  
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    background-color: #383838;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-transform: uppercase;
+ }
+ #js{
+    
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    background-color: #383838;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-transform: uppercase;
+ }
+ a:hover{
+    transform: scale(1.1);
+    letter-spacing: 2px;
+ }
+ .buttons-m{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+ }
+ @media (max-width:1190px) {
+body{
+    flex-direction: column;
+    height: 100%;
+}
+
+.container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.cards{
+    transform: scale(1.2);
+    margin: 20px;
+}
+.cards:hover{
+    transform: scale(1.25);
+
+}
+.vidios{
+    flex-direction: column;
+    width: 100%;
+
+}
+.buttons-m{
+    display: flex;
+}
+.buttons{
+    display: none;
+}
+ }
+@media (max-width:300px){
+    .container{
+        width: 100%;
+    }
+    .vidios{
+        width: 100%;
+    }
+    .container iframe{
+        width: 90%;
+    }
+    .vidios iframe{
+        width: 90%;
+
+    }
+}
