@@ -233,18 +233,3 @@ body{
     display: none;
 }
  }
-@media (max-width:300px){
-    .container{
-        width: 100%;
-    }
-    .vidios{
-        width: 100%;
-    }
-    .container iframe{
-        width: 90%;
-    }
-    .vidios iframe{
-        width: 90%;
-
-    }
-}
