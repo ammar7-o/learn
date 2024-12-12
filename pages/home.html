@@ -13,18 +13,30 @@
             align-items: center;
         }
 
+        .side-bar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
         a {
+            display: block;
             text-decoration: none;
             color: white;
-            display: block;
-            font-size: 22px;
+            font-size: 30px;
+            height: 200px;
+            width: 200px;
             margin: 10px;
-            background-color: #004a75;
-            width: 90%;
+            /* background-color: #004a75; */
             text-align: center;
             padding: 7px;
             border-radius: 7px;
             transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
         }
 
         a:hover {
@@ -34,33 +46,96 @@
         a:active {
             transform: scale(1.04);
         }
-        body::-webkit-scrollbar{
+
+        body::-webkit-scrollbar {
             width: 20px;
         }
 
-        body::-webkit-scrollbar-thumb{
+        body::-webkit-scrollbar-thumb {
             background-color: rgb(0, 27, 100);
+        }
+        hr{
+            width: 90%;
+        }
+
+        a:first-child{
+            background-image: linear-gradient(to right, #ee6001, #5C2FC2);
+
+        }
+        a:nth-child(2) {
+            background-image: linear-gradient(to right, #01d2ee, #0750ec);
+
+        }
+        a:nth-child(3) {
+            background-image: linear-gradient(to right, #cbda00, #00af3a);
+
+        }
+        a:nth-child(4) {
+            background-image: linear-gradient(to right, #8900b3, #0750ec);
+
+        }
+        a:nth-child(5) {
+            background-image: linear-gradient(to right, #007585, #182c6d);
+
+        }
+        a:nth-child(6) {
+            background-image: linear-gradient(to right, #01abee, #5f07ec);
+
+        }
+        a:nth-child(7) {
+            background-image: linear-gradient(to right, #da980b, #e0037d);
+
+        }
+        a:nth-child(8) {
+            background-image: linear-gradient(to right, #01d2ee, #0750ec);
+
+        }
+        a:nth-child(9) {
+            background-image: linear-gradient(to right, #294d52, #263453);
+
+        }
+        a:nth-child(10) {
+            background-image: linear-gradient(to right, #00a4b9, #5488f8);
+
+        }
+        a:nth-child(11) {
+            background-image: linear-gradient(to right, #01d2ee, #0750ec);
+
+        }
+        a:nth-child(12) {
+            background-image: linear-gradient(to right, #407211, #049b24);
+
+        }
+        a:nth-child(13) {
+            background-image: linear-gradient(to right, #02b930, #b100b8);
+
+        }
+        a:nth-child(14) {
+            background-image: linear-gradient(to right, #1f1047, #19387a);
+
         }
     </style>
 </head>
 
 <body>
     <h1>LEARN</h1>
+    <hr>
+
     <div class="side-bar">
-        <a onclick="go('./pages/html.html')" href="html.html">HTML</a>
-        <a onclick="go('./pages/css.html')" href="css.html">CSS</a>
-        <a onclick="go('./pages/js.html')" href="js.html">JAVA-SCRIPT</a>
-        <a onclick="goto('https://ammar7-o.github.io/esely/')" href="#">ENGLISH</a>
-        <a onclick="go('./pages/git-githup.html')" href="git-githup.html">GIT_GITHUP</a>
-        <a onclick="go('./pages/react.html')" href="react.html">REACT-JS</a>
-        <a onclick="go('./pages/node.html')" href="node.html">NODE-JS</a>
-        <a onclick="go('./pages/photoshop.html')" href="photoshop.html">PHOTOSHOP</a>
-        <a onclick="go('./pages/scratch.html')" href="scratch.html">SCRATCH</a>
-        <a onclick="go('./pages/cs50.html')" href="cs50.html">CS50</a>
-        <a onclick="go('./pages/python.html')" href="python.html">PHTHON</a>
-        <a onclick="go('./pages/figma.html')" href="figma.html">FIGMA</a>
-        <a onclick="go('./pages/ui-ux.html')" href="ui-ux.html">UI-UX</a>
-        <a onclick="go('./pages/francais.html')" href="francais.html">FRANCAIS</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JAVA-SCRIPT</a>
+        <a href="#">ENGLISH</a>
+        <a href="git-githup.html">GIT-GITHUP</a>
+        <a href="react.html">REACT-JS</a>
+        <a href="node.html">NODE-JS</a>
+        <a href="photoshop.html">PHOTOSHOP</a>
+        <a href="scratch.html">SCRATCH</a>
+        <a href="cs50.html">CS50</a>
+        <a href="python.html">PHTHON</a>
+        <a href="figma.html">FIGMA</a>
+        <a href="ui-ux.html">UI-UX</a>
+        <a href="francais.html">FRANCAIS</a>
 
     </div>
 </body>

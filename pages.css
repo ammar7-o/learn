@@ -97,9 +97,12 @@ iframe {
 
     .card {
         width: 40%;
+        height: 100%;
         padding: 10px;
         img{
             background-size: cover;
+            width: 80%;
+            height: 60%;
         }
     }
 
